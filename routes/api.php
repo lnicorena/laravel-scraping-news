@@ -13,6 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/status', function () {
+    return "It works!";
+});
+
+Route::get('/debug-sentry', function () {
+    throw new Exception('My first Sentry error!');
 });
