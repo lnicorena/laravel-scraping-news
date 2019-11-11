@@ -1,0 +1,30 @@
+{
+    "id": 31035538,
+    "name": "Anthony Ha",
+    "url": "",
+    "description": "",
+    "link": "https://techcrunch.com/author/anthony-ha/",
+    "slug": "anthony-ha",
+    "avatar_urls": {
+        "24": "https://secure.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=24&d=identicon&r=g",
+        "48": "https://secure.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=48&d=identicon&r=g",
+        "96": "https://secure.gravatar.com/avatar/72b358648f4587cc2a11895c32b8e979?s=96&d=identicon&r=g"
+    },
+    "meta": [],
+    "links": {
+        "facebook": "https://www.facebook.com/anthonyha",
+        "twitter": "https://twitter.com/anthonyha",
+        "linkedin": "http://www.linkedin.com/in/anthonyha",
+        "crunchbase": "https://www.crunchbase.com/person/anthony-ha"
+    },
+    "position": "Senior Writer",
+    "cbDescription": "<p>Anthony Ha is a senior writer at TechCrunch, where he covers media and advertising and co-hosts the Original Content podcast. Previously, he worked as a tech writer at Adweek, a senior editor at the tech blog VentureBeat, and a local government reporter at the Hollister Free Lance. He lives in New York City.</p>",
+    "cbAvatar": "https://crunchbase-production-res.cloudinary.com/image/upload/vlqk5j1ukg37id0pflay",
+    "twitter": "anthonyha",
+    "_links": {
+        "self": [
+            { "href": "https://techcrunch.com/wp-json/tc/v1/users/31035538" }
+        ],
+        "collection": [{ "href": "https://techcrunch.com/wp-json/tc/v1/users" }]
+    }
+}

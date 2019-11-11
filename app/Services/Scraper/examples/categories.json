@@ -1,0 +1,94 @@
+[
+    {
+        "id": 20429,
+        "count": 23607,
+        "description": "The newest companies that could change the world",
+        "link": "https://techcrunch.com/startups/",
+        "name": "Startups",
+        "slug": "startups",
+        "taxonomy": "category",
+        "parent": 0,
+        "meta": [],
+        "rapidData": { "pt": "", "pct": "" },
+        "submenu_categories": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/categories/20429"
+                }
+            ],
+            "collection": [
+                { "href": "https://techcrunch.com/wp-json/wp/v2/categories" }
+            ],
+            "about": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/taxonomies/category"
+                }
+            ],
+            "wp:post_type": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/posts?categories=20429"
+                },
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/tc-media-gallery?categories=20429"
+                },
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/tc_video?categories=20429"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 35394854,
+        "count": 4119,
+        "description": "",
+        "link": "https://techcrunch.com/venture-capital-2/",
+        "name": "Venture Capital",
+        "slug": "venture-capital-2",
+        "taxonomy": "category",
+        "parent": 0,
+        "meta": [],
+        "rapidData": { "pt": "", "pct": "" },
+        "submenu_categories": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/categories/35394854"
+                }
+            ],
+            "collection": [
+                { "href": "https://techcrunch.com/wp-json/wp/v2/categories" }
+            ],
+            "about": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/taxonomies/category"
+                }
+            ],
+            "wp:post_type": [
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/posts?categories=35394854"
+                },
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/tc-media-gallery?categories=35394854"
+                },
+                {
+                    "href": "https://techcrunch.com/wp-json/wp/v2/tc_video?categories=35394854"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
