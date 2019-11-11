@@ -23,6 +23,7 @@ class WebScraper
             
             $article = $this->scraper->getNextArticle();
             
+            print_r($article);
             // Save to DB
         }
         
