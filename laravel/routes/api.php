@@ -17,7 +17,8 @@ Route::get('/status', function () {
     return "It works!";
 });
 
-Route::get('/debug-sentry', function () {
-    throw new Exception('My first Sentry error!');
-});
+Route::get('/articles', 'ArticlesController@index');
 
+// Route::get('/debug-sentry', function () {
+//     throw new Exception('My first Sentry error!');
+// });
