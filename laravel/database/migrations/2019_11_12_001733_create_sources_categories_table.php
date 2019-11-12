@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArticlesCategories extends Migration
+class CreateSourcesCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,15 @@ class CreateArticlesCategories extends Migration
      */
     public function up()
     {
-        Schema::create('articles_categories', function (Blueprint $table) {
-            $table->integer('article_id');
+        Schema::create('sources_categories', function (Blueprint $table) {
+            $table->integer('source_id');
             $table->integer('category_id');
 
-            $table->primary(['article_id', 'category_id']);
-            
-            $table->foreign('article_id')->references('id')->on('articles')
+            $table->integer('original_id');
+
+            $table->primary(['source_id', 'category_id']);
+
+            $table->foreign('source_id')->references('id')->on('sources')
                 ->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('category_id')->references('id')->on('categories')
                 ->onUpdate('cascade')->onDelete('cascade');
@@ -33,6 +35,6 @@ class CreateArticlesCategories extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_categories');
+        Schema::dropIfExists('sources_categories');
     }
 }

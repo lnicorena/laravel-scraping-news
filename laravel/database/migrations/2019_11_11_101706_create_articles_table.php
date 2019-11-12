@@ -23,13 +23,13 @@ class CreateArticlesTable extends Migration
             $table->timestamp('date_pub');
             $table->timestamp('date_mod');
             $table->longText('content');
-            $table->string('excerpt')->nullable();
+            $table->longText('excerpt')->nullable();
             $table->string('image')->nullable();
             $table->integer('featured');
             $table->timestamps();
 
             $table->foreign('source_id')->references('id')->on('sources')
-                ->onDelete('cascade');
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

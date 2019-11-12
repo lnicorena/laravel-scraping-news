@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArticlesAuthors extends Migration
+class CreateSourcesAuthorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,16 @@ class CreateArticlesAuthors extends Migration
      */
     public function up()
     {
-        Schema::create('articles_authors', function (Blueprint $table) {
-            $table->integer('article_id');
+        Schema::create('sources_authors', function (Blueprint $table) {
+
+            $table->integer('source_id');
             $table->integer('author_id');
 
-            $table->primary(['article_id', 'author_id']);
+            $table->integer('original_id');
 
-            $table->foreign('article_id')->references('id')->on('articles')
+            $table->primary(['source_id', 'author_id']);
+
+            $table->foreign('source_id')->references('id')->on('sources')
                 ->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('author_id')->references('id')->on('authors')
                 ->onUpdate('cascade')->onDelete('cascade');
@@ -33,6 +36,6 @@ class CreateArticlesAuthors extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_authors');
+        Schema::dropIfExists('sources_authors');
     }
 }

@@ -22,7 +22,7 @@ class CreateScrapesLogTable extends Migration
             $table->integer('articles_imported');
             
             $table->foreign('source_id')->references('id')->on('sources')
-                ->onDelete('cascade');
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

@@ -6,7 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Articles extends Model
 {
-    //
+
+    protected $fillable = [
+        'original_id', 'date_pub', 'date_mod', 'slug', 'title', 'link', 'content', 'excerpt', 'featured', 'image'
+    ];
 
     public function authors()
     {

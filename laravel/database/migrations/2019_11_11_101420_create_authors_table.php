@@ -17,8 +17,8 @@ class CreateAuthorsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('position');
-            $table->string('description');
+            $table->longText('position')->nullable();
+            $table->longText('description')->nullable();
             $table->string('avatar')->nullable();
             $table->string('twitter')->nullable();
             $table->string('linkedin')->nullable();
