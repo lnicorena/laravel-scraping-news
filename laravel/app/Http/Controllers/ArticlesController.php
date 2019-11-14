@@ -18,6 +18,6 @@ class ArticlesController extends Controller
     {
         return Articles::with('authors')
             ->with('categories')
-            ->paginate();
+            ->paginate(10);
     }
 }
