@@ -8,6 +8,8 @@ class Categories extends Model
 {
     public $timestamps = false;
 
+    protected $hidden = ['pivot'];
+
     protected $fillable = [
         'name', 'slug', 'description'
     ];

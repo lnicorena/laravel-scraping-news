@@ -8,6 +8,8 @@ class Authors extends Model
 {
     public $timestamps = false;
 
+    protected $hidden = ['pivot'];
+
     protected $fillable = [
         'name', 'slug', 'description', 'position', 'avatar', 'twitter', 'linkedin', 'facebook'
     ];
