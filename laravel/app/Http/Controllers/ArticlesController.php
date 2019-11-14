@@ -25,11 +25,18 @@ class ArticlesController extends Controller
 
         $category = intval($request->input('category'));
         if ($category)
-            $articles->whereHas('categories', function (Builder $query) use ($category) {
-                $query->where('id', '=', $category);
-            });
-
-        return $articles->paginate(10);
+        $articles->whereHas('categories', function (Builder $query) use ($category) {
+            $query->where('id', '=', $category);
+        });
+        
+        // items per page
+        $items = intval($request->input('items'));
+        if ($items < 1 || $items > 25) {
+            $items = 6;
+        }
+        
+        // page param is handled by eloquent paginator
+        return $articles->paginate($items);
     }
 
     /**
