@@ -19,6 +19,8 @@ Route::get('/status', function () {
 
 Route::get('/articles', 'ArticlesController@index');
 
+Route::get('/categories', 'ArticlesController@categories');
+
 // Route::get('/debug-sentry', function () {
 //     throw new Exception('My first Sentry error!');
 // });

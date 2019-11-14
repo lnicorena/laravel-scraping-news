@@ -25,8 +25,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('scrape:news TechCrunch --days-ago=1')
-            ->daily()
-            ->at('00:00');
+            // ->daily()
+            // ->at('00:00');
+            ->everyThirtyMinutes();
     }
 
     /**
